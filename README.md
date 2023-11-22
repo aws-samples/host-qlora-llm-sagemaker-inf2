@@ -10,7 +10,7 @@ This repo contains 2 notebooks:
 
 1. [finetune llama2](llama2-7b-finetune-qlora.ipynb) should be run first to create a finetuned model with LoRA adapter weights. 
 
-2. [Deploy the QLoRA model in SageMaker for inference] (deploy_finetuned_llama_2.ipynb)
+2. [Deploy the QLoRA model in SageMaker for inference](deploy_finetuned_llama_2.ipynb) should be run after the finetuned model artifact has been uploaded to an S3 bucket.
 
 The first notebook has been tested ina g5.2xlarge instance in SageMaker Studio using a Pytorch 2.0 GPU Optimized kernel.
 
