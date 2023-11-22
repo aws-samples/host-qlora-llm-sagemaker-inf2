@@ -1,17 +1,17 @@
-## My Project
+# peft-llama2-neuron-inf2
 
-TODO: Fill this README out!
+## Overview
+This repository demonstrates how you could finetune a llama2 model using PEFT technique, such as QLoRA, and convert the quantized model to the AWS neuron compatible format. 
+The converted neuron model is deployed to an inf2 instance using a DJL serving container in SageMaker environment..
 
-Be sure to:
 
-* Change the title in this README
-* Edit your repository description on GitHub
+## Getting Started
+This repo contains 2 notebooks: 
 
-## Security
+1. [finetune llama2](llama2-7b-finetune-qlora.ipynb) should be run first to create a finetuned model with LoRA adapter weights. 
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+2. [Deploy the QLoRA model in SageMaker for inference] (deploy_finetuned_llama_2.ipynb)
 
-## License
+The first notebook has been tested ina g5.2xlarge instance in SageMaker Studio using a Pytorch 2.0 GPU Optimized kernel.
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
-
+The second notebook has been tested in a SageMaker Studio ml.t3.medium notebook instance with Data Science 3.0 and Python kernel.
