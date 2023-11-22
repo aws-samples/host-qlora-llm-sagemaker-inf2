@@ -1,4 +1,4 @@
-# peft-llama2-neuron-inf2
+# Host a QLoRA finetuned LLM using inferentia2 in Amazon SageMaker
 
 ## Overview
 This repository demonstrates how you could finetune a llama2 model using PEFT technique, such as QLoRA, and convert the quantized model to the AWS neuron compatible format. 
