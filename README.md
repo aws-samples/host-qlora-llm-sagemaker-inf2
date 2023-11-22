@@ -12,6 +12,6 @@ This repo contains 2 notebooks:
 
 2. [Deploy the QLoRA model in SageMaker for inference](deploy_finetuned_llama_2.ipynb) should be run after the finetuned model artifact has been uploaded to an S3 bucket.
 
-The first notebook has been tested ina g5.2xlarge instance in SageMaker Studio using a Pytorch 2.0 GPU Optimized kernel.
+The first notebook has been tested in a ml.g5.2xlarge instance in SageMaker Studio using a Pytorch 2.0 GPU Optimized kernel.
 
 The second notebook has been tested in a SageMaker Studio ml.t3.medium notebook instance with Data Science 3.0 and Python kernel.
